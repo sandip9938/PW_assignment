@@ -1,0 +1,24 @@
+body{
+    background-color: #212121;
+    color: aliceblue;
+}
+div{
+    margin: 0 auto; /* Center the div horizontally */
+    width: fit-content;/* Set a maximum size for better responsiveness*/
+    padding: 5%;   /* Add some space around content inside container */
+    font-size: 35px;
+}
+div input{
+    height: 100px;
+    width: 600px;
+    font-size: 35px;
+    border-radius: 10px;
+    outline: none;
+   
+}
+input:hover{
+    background-color: #212121;
+    color: aliceblue;
+    border: 2px solid white;
+    f
+}

@@ -1,0 +1,18 @@
+
+body{
+    background-color: black;
+    color: aliceblue;
+}
+#container{
+    height: 400px;
+    width: 800px;
+    background-color: #212121;
+   margin: 100px;
+   margin-left: 300px;
+   border-radius: 10px;
+
+}
+h1{
+    text-align: center;
+    
+}

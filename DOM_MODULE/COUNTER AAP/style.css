@@ -1,0 +1,39 @@
+body {
+  background-color: #212121;
+  color: aliceblue;
+}
+.container {
+  height: 100%;
+  width: 100%;
+}
+.counting_section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 45vh;
+  margin-right: 100px;
+  margin-top: -30px;
+  gap: 12px;
+}
+.heading p {
+  margin-left: 500px;
+  font-size: 45px;
+  margin-top: 209px;
+  font-size: 45px;
+}
+button {
+  height: 50px;
+  width: 200px;
+  margin-left: 550px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+span {
+  margin-right: 60px;
+  font-size: 47px;
+}
+button:hover {
+  background-color: #212121;
+  color: aliceblue;
+  cursor: pointer;
+}
