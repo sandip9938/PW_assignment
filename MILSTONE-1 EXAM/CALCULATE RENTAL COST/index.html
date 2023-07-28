@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Rental cost</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Car rental Calulator</h1>
+        <div class="section1">
+<label for="Catagory-select">Catagory of Car -:</label>
+<select  id="Catagory-select">
+    <option value="Swift-Rs.900">Swift-Rs.900</option>
+    <option value="Alto-Rs.1100">Alto-Rs.1100</option>
+    <option value="Seltos-Rs.1230">Seltos-Rs.1230</option>
+    <option value="Exter-Rs.1300">Exter-Rs.1300</option>
+    <option value="City-Rs.1340">City-Rs.1340</option>
+    <option value="Baleno-Rs.1400">Baleno-Rs.1400</option>
+    <option value="Harrier-Rs.1500">Harrier-Rs.1500</option>
+    <option value="Xuv500-Rs.1700">Xuv500-Rs.1700</option>
+    <option value="Xuv700-Rs.1800">Xuv700-Rs.1800</option>
+    <option value="jaguar-Rs.1900">jaguar-Rs.1900</option>
+    <option value="Nexon-Rs.2000">Nexon-Rs.2000</option>
+    <option value="Punch-Rs.2100">Punch-Rs.2100</option>
+    <option value="Altroz-Rs.2200">Altroz-Rs.2200</option>
+    <option value="Tiago-Rs.2300">Tiago-Rs.2300</option>
+    <option value="Invicto-Rs.2400">Invicto-Rs.2400</option>
+    <option value="Fronx-Rs.2500">Fronx-Rs.2500</option>
+    <option value="Jimny-Rs.2600">Jimny-Rs.2600</option>
+    <option value="Brezza-Rs.2700">Brezza-Rs.2700</option>
+    <option value="Thar-Rs.2800">Thar-Rs.2800</option>
+    <option value="BMW-Rs.3000">BMW-Rs.3000</option>
+</select>
+<label for="Name">Rental Person Name -:</label>
+<input type="text" placeholder="<NAME>" id="name">
+    <label for="amount">Amount</label>
+    <input type="number" id="amount">
+    <label for="Date">Date -:</label>
+    <input type="Date" id="date">
+    <label for="Time">Time -:</label>
+    <input type="time" id="time">
+    <button id="Add">Add</button>
+        </div>
+        <h1>Expenses list</h1>
+        <div class="section2">
+<table>
+    <thead>
+        <tr>
+            <th>Car name</th>
+            <th>Amount</th>
+            <th>Name</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody id="expensestable">
+
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>Total:</td>
+            <td id="totalamont"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tfoot>
+</table>
+        </div>
+</div>
+</body>
+<script src="script.js"></script>
+</html>
