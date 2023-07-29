@@ -21,7 +21,7 @@ addbtn.addEventListener('click',()=>{
         alert("Please select a Catagory")
         return
     }
-    if(amount === ''){
+    if(isNaN(amount) || amount <=0 ){
         alert("Please enter an name ")
         return
     }
@@ -38,10 +38,10 @@ addbtn.addEventListener('click',()=>{
         alert("Please enter an time ")
         return
     }
-    expenses.push({catagory,namee,datee,timee})
+    expenses.push({catagory, amount, namee, datee, timee})
     totalAmount += amount
     totalamont.textContent = totalAmount
-
+    const newRow =expensestable.insertRow()
     const catagorycell= newRow.insertCell()
     const amountycell= newRow.insertCell()
     const namecell= newRow.insertCell()
@@ -54,16 +54,16 @@ addbtn.addEventListener('click',()=>{
     deletbtn.textContent = 'Delete'
     deletbtn.classList.add('delete_btn')
 deletbtn.addEventListener('click',function () {
-    expenses.splice(expenses.indexOf(expenses),1)
+    expenses.splice(expenses.indexOf(expens),1)
 
 
-    totalAmount -= expenses.amount
+    totalAmount -= expens.amount
    totalamont.textContent = totalAmount
 
    expensestable.removeChild(newRow)
 })
   
-const expens = expenses[expenses.length-1]
+const expens = expenses[expenses.length - 1]
 catagorycell.textContent=expens.catagory
 amountycell.textContent=expens.amount
 namecell.textContent=expens.namee
@@ -89,23 +89,23 @@ const categoryCell = newRow.insertCell();
     deletbtn.textContent ='Delete'
     deletbtn.classList.add ('delete_btn');
     deletbtn.addEventListener('click',function () {
-        expenses.splice(expenses.indexOf(expenses),1)
+        expenses.splice(expenses.indexOf(expens),1)
     
     
-        totalAmount -= expenses.amount
+        totalAmount -= expens.amount
        totalamont.textContent = totalAmount
     
        expensestable.removeChild(newRow)
     })
     //create a button to be added in the last cell which will call function that deletes row from
 
-    const expens = expenses[expenses.length-1]
-    catagorycell.textContent=expens.catagory
-    amountycell.textContent=expens.amount
-    namecell.textContent=expens.namee
-    datecell.textContent=expens.datee
+    
+    categoryCell.textContent=expens.catagory
+    amountCell.textContent=expens.amount
+    nameCell.textContent=expens.namee
+    dateCell.textContent=expens.datee
     timecell.textContent=expens.timee
-    deletecell.appendChild(deletbtn)
+    deleteCell.appendChild(deletbtn)
 
 
 
