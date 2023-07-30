@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validate password</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+<h1 class="head">User login</h1>
+<form class="login" method="post" onsubmit="return validate()" name="form" action="index2.html">
+    <div class="font">Email</div>
+    <input type="text" name="email">
+    <div id="emailerror">Please fill up your correct email or phone</div>
+    <div class="font">Password</div>
+    <input type="password" name="password">
+    <div id="passerror">Please fill up your password</div>
+    <button>Login</button>
+</form>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

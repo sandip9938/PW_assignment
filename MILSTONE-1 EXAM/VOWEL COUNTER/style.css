@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(35, 35, 35);
+    color: antiquewhite;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 50px;
+    gap: 25px;
+}
+textarea{
+    outline: none;
+    font-size: 23px;
+    font-weight: 500;
+    width: 70vw;
+    border: 2px solid red;
+    border-radius: 10px;
+}
+button{
+    padding: 8px 40px;
+    cursor: pointer;
+width: 400px;
+align-items: center;
+font-size: 25px;
+
+font-weight: 500;
+border-radius: 10px;
+}
+button:hover{
+    background-color: black;
+    color: antiquewhite;
+
+}
