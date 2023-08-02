@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    text-align: center;
+    margin: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 100px auto;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    height: 200px;
+    width: 200px;
+}
