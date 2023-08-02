@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inverted Right-Angle Triangle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="triangle"></div>
+    <script>
+        const triangleHeight = 5; // You can adjust the height of the triangle
+
+        let invertedTriangle = "";
+        for (let i = triangleHeight; i >= 1; i--) {
+            for (let j = 1; j <= i; j++) {
+                invertedTriangle += "*";
+            }
+            invertedTriangle += "<br>";
+        }
+
+        document.getElementById("triangle").innerHTML = invertedTriangle;
+    </script>
+</body>
+</html>
